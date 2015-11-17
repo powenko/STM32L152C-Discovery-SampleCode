@@ -1,0 +1,26 @@
+Dependencies for Project 'Blinky', Target 'STM32L100 Flash': (DO NOT MODIFY !)
+F (.\startup_stm32l1xx_mdp.s)(0x5320E11C)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx--pd "__UVISION_VERSION SETA 515"--list .\flash\startup_stm32l1xx_mdp.lst --xref -o .\flash\startup_stm32l1xx_mdp.o --depend .\flash\startup_stm32l1xx_mdp.d)
+F (.\system_stm32l1xx.c)(0x5320E11C)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DSTM32L1XX_MDP-o .\flash\system_stm32l1xx.o --omf_browse .\flash\system_stm32l1xx.crf --depend .\flash\system_stm32l1xx.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+F (.\LED.c)(0x564AF170)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DSTM32L1XX_MDP-o .\flash\led.o --omf_browse .\flash\led.crf --depend .\flash\led.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+I (LED.h)(0x5320907C)
+F (.\Blinky.c)(0x564AEB78)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DSTM32L1XX_MDP-o .\flash\blinky.o --omf_browse .\flash\blinky.crf --depend .\flash\blinky.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+I (LED.h)(0x5320907C)
+F (.\Abstract.txt)(0x5320907C)()
