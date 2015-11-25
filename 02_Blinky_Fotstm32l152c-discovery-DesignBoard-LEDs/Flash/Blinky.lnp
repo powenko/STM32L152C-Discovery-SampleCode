@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\flash\startup_stm32l1xx_mdp.o"
+".\flash\system_stm32l1xx.o"
+".\flash\led.o"
+".\flash\blinky.o"
+--strict --scatter ".\Flash\Blinky.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\Blinky.map" -o .\Flash\Blinky.axf

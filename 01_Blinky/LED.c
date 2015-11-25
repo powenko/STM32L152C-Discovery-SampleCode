@@ -16,10 +16,7 @@
 #include <stm32l1xx.h>
 #include "LED.h"
 
-const unsigned long led1=6UL;
-const unsigned long led2=7UL;
-
-const unsigned long led_mask[] = {1UL << led1, 1UL << led2};
+const unsigned long led_mask[] = {1UL << 8, 1UL << 9};
 
 /*-----------------------------------------------------------------------------
  *      LED_Init:  Initialize LED Pins
@@ -30,16 +27,14 @@ const unsigned long led_mask[] = {1UL << led1, 1UL << led2};
 void LED_Init (void) {
 
   RCC->AHBENR |=  (1UL <<  2);                  /* Enable GPIOC clock         */
-  
-  RCC->AHBENR |= RCC_AHBENR_GPIOBEN; //enable clock for LEDs        /* Enable GPIOC clock         */
 
   /* Configure LED (PC.8..9) pins as push-pull outputs, No pull-up, pull-down */
-  GPIOB->MODER   &= ~((3UL << 2*led1) | (3UL << 2*led2));
-  GPIOB->MODER   |=  ((1UL << 2*led1) | (1UL << 2*led2));
-  GPIOB->OTYPER  &= ~((1UL <<   led1) | (1UL <<   led2));
-  GPIOB->OSPEEDR &= ~((3UL << 2*led1) | (3UL << 2*led2));
-  GPIOB->OSPEEDR |=  ((1UL << 2*led1) | (1UL << 2*led2));
-  GPIOB->PUPDR   &= ~((3UL << 2*led1) | (3UL << 2*led2));
+  GPIOC->MODER   &= ~((3UL << 2*8) | (3UL << 2*9));
+  GPIOC->MODER   |=  ((1UL << 2*8) | (1UL << 2*9));
+  GPIOC->OTYPER  &= ~((1UL <<   8) | (1UL <<   9));
+  GPIOC->OSPEEDR &= ~((3UL << 2*8) | (3UL << 2*9));
+  GPIOC->OSPEEDR |=  ((1UL << 2*8) | (1UL << 2*9));
+  GPIOC->PUPDR   &= ~((3UL << 2*8) | (3UL << 2*9));
 }
 
 
@@ -52,7 +47,7 @@ void LED_Init (void) {
 void LED_On (uint32_t num) {
 
   if (num < LED_NUM) {
-    GPIOB->BSRRL = led_mask[num];
+    GPIOC->BSRRL = led_mask[num];
   }
 }
 
@@ -65,7 +60,7 @@ void LED_On (uint32_t num) {
 void LED_Off (uint32_t num) {
 
   if (num < LED_NUM) {
-    GPIOB->BSRRH = led_mask[num];
+    GPIOC->BSRRH = led_mask[num];
   }
 }
 

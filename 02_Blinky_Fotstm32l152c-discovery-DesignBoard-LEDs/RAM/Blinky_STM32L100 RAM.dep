@@ -1,0 +1,26 @@
+Dependencies for Project 'Blinky', Target 'STM32L100 RAM': (DO NOT MODIFY !)
+F (.\startup_stm32l1xx_mdp.s)(0x5320E11C)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx--pd "__UVISION_VERSION SETA 515"--list .\ram\startup_stm32l1xx_mdp.lst --xref -o .\ram\startup_stm32l1xx_mdp.o --depend .\ram\startup_stm32l1xx_mdp.d)
+F (.\system_stm32l1xx.c)(0x5320E11C)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DVECT_TAB_SRAM -DSTM32L1XX_MDP-o .\ram\system_stm32l1xx.o --omf_browse .\ram\system_stm32l1xx.crf --depend .\ram\system_stm32l1xx.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+F (.\LED.c)(0x564AEAA1)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DVECT_TAB_SRAM -DSTM32L1XX_MDP-o .\ram\led.o --omf_browse .\ram\led.crf --depend .\ram\led.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+I (LED.h)(0x5320907C)
+F (.\Blinky.c)(0x564AE7F3)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32L1xx-D__UVISION_VERSION="515" -DVECT_TAB_SRAM -DSTM32L1XX_MDP-o .\ram\blinky.o --omf_browse .\ram\blinky.crf --depend .\ram\blinky.d)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x5320E11A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x5320921A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C326B8)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x5320921A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x5320921A)
+I (C:\Keil_v5\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x5320E11A)
+I (LED.h)(0x5320907C)
+F (.\Abstract.txt)(0x5320907C)()

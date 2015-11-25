@@ -97,15 +97,6 @@ int main (void) {
   BTN_Init();
 
   SysTick_Config(SystemCoreClock / 100);        /* SysTick 10 msec interrupts */
-  ///////////////
-//	RCC->AHBENR |=RCC_AHBENR_GPIOBEN;
-//	PinCfgB();
-//	PinCfgB(8,1,0);
-//	PinCfgB(9,1,0);
-//	GPIO_SetBits(GPIOB,GPIO_Pin_5);
-	
-	
-	////////////////
 	
   while(1) {                                    /* Loop forever               */
     btns = BTN_Get();                           /* Read button states         */

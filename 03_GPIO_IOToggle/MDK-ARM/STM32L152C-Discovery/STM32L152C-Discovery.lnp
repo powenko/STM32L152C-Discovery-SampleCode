@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"stm32l152c-discovery\stm32l152c_discovery.o"
+"stm32l152c-discovery\main.o"
+"stm32l152c-discovery\stm32l1xx_it.o"
+"stm32l152c-discovery\system_stm32l1xx.o"
+"stm32l152c-discovery\startup_stm32l152xc.o"
+"stm32l152c-discovery\stm32l1xx_hal_cortex.o"
+"stm32l152c-discovery\stm32l1xx_hal.o"
+"stm32l152c-discovery\stm32l1xx_hal_pwr_ex.o"
+"stm32l152c-discovery\stm32l1xx_hal_rcc.o"
+"stm32l152c-discovery\stm32l1xx_hal_pwr.o"
+"stm32l152c-discovery\stm32l1xx_hal_gpio.o"
+--library_type=microlib --strict --scatter "STM32L152C-Discovery\STM32L152C-Discovery.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32L152C-Discovery.map" -o STM32L152C-Discovery\STM32L152C-Discovery.axf

@@ -246,15 +246,15 @@ Image Symbol Table
     .text                                    0x08000200   Section        0  system_stm32l1xx.o(.text)
     SetSysClock                              0x08000201   Thumb Code   258  system_stm32l1xx.o(.text)
     .text                                    0x08000454   Section        0  led.o(.text)
-    .text                                    0x08000508   Section        0  blinky.o(.text)
-    .text                                    0x080006c8   Section        0  heapauxi.o(.text)
-    .text                                    0x080006ce   Section       74  sys_stackheap_outer.o(.text)
-    .text                                    0x08000718   Section        0  exit.o(.text)
-    .text                                    0x08000724   Section        8  libspace.o(.text)
-    .text                                    0x0800072c   Section        0  sys_exit.o(.text)
-    .text                                    0x08000738   Section        2  use_no_semi.o(.text)
-    .text                                    0x0800073a   Section        0  indicate_semi.o(.text)
-    .constdata                               0x0800073c   Section       16  led.o(.constdata)
+    .text                                    0x080004fc   Section        0  blinky.o(.text)
+    .text                                    0x080006bc   Section        0  heapauxi.o(.text)
+    .text                                    0x080006c2   Section       74  sys_stackheap_outer.o(.text)
+    .text                                    0x0800070c   Section        0  exit.o(.text)
+    .text                                    0x08000718   Section        8  libspace.o(.text)
+    .text                                    0x08000720   Section        0  sys_exit.o(.text)
+    .text                                    0x0800072c   Section        2  use_no_semi.o(.text)
+    .text                                    0x0800072e   Section        0  indicate_semi.o(.text)
+    .constdata                               0x08000730   Section        8  led.o(.constdata)
     .data                                    0x20000000   Section       29  system_stm32l1xx.o(.data)
     .data                                    0x20000020   Section        4  blinky.o(.data)
     .bss                                     0x20000024   Section       96  libspace.o(.bss)
@@ -414,33 +414,31 @@ Image Symbol Table
     __user_initial_stackheap                 0x080001dd   Thumb Code     0  startup_stm32l1xx_mdp.o(.text)
     SystemInit                               0x08000303   Thumb Code    88  system_stm32l1xx.o(.text)
     SystemCoreClockUpdate                    0x0800035b   Thumb Code   204  system_stm32l1xx.o(.text)
-    LED_Init                                 0x08000455   Thumb Code    92  led.o(.text)
-    LED_On                                   0x080004b1   Thumb Code    18  led.o(.text)
-    LED_Off                                  0x080004c3   Thumb Code    18  led.o(.text)
-    LED_Out                                  0x080004d5   Thumb Code    38  led.o(.text)
-    SysTick_Handler                          0x08000509   Thumb Code    12  blinky.o(.text)
-    Delay                                    0x08000515   Thumb Code    18  blinky.o(.text)
-    BTN_Init                                 0x08000527   Thumb Code    46  blinky.o(.text)
-    BTN_Get                                  0x08000555   Thumb Code    10  blinky.o(.text)
-    SystemCoreClockSetHSI                    0x0800055f   Thumb Code   154  blinky.o(.text)
-    main                                     0x080005f9   Thumb Code   176  blinky.o(.text)
-    __use_two_region_memory                  0x080006c9   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_escrow$2region                 0x080006cb   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_expand$2region                 0x080006cd   Thumb Code     2  heapauxi.o(.text)
-    __user_setup_stackheap                   0x080006cf   Thumb Code    74  sys_stackheap_outer.o(.text)
-    exit                                     0x08000719   Thumb Code    12  exit.o(.text)
-    __user_libspace                          0x08000725   Thumb Code     8  libspace.o(.text)
-    __user_perproc_libspace                  0x08000725   Thumb Code     0  libspace.o(.text)
-    __user_perthread_libspace                0x08000725   Thumb Code     0  libspace.o(.text)
-    _sys_exit                                0x0800072d   Thumb Code     8  sys_exit.o(.text)
-    __I$use$semihosting                      0x08000739   Thumb Code     0  use_no_semi.o(.text)
-    __use_no_semihosting_swi                 0x08000739   Thumb Code     2  use_no_semi.o(.text)
-    __semihosting_library_function           0x0800073b   Thumb Code     0  indicate_semi.o(.text)
-    led1                                     0x0800073c   Data           4  led.o(.constdata)
-    led2                                     0x08000740   Data           4  led.o(.constdata)
-    led_mask                                 0x08000744   Data           8  led.o(.constdata)
-    Region$$Table$$Base                      0x0800074c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800076c   Number         0  anon$$obj.o(Region$$Table)
+    LED_Init                                 0x08000455   Thumb Code    82  led.o(.text)
+    LED_On                                   0x080004a7   Thumb Code    18  led.o(.text)
+    LED_Off                                  0x080004b9   Thumb Code    18  led.o(.text)
+    LED_Out                                  0x080004cb   Thumb Code    38  led.o(.text)
+    SysTick_Handler                          0x080004fd   Thumb Code    12  blinky.o(.text)
+    Delay                                    0x08000509   Thumb Code    18  blinky.o(.text)
+    BTN_Init                                 0x0800051b   Thumb Code    46  blinky.o(.text)
+    BTN_Get                                  0x08000549   Thumb Code    10  blinky.o(.text)
+    SystemCoreClockSetHSI                    0x08000553   Thumb Code   154  blinky.o(.text)
+    main                                     0x080005ed   Thumb Code   176  blinky.o(.text)
+    __use_two_region_memory                  0x080006bd   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x080006bf   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x080006c1   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x080006c3   Thumb Code    74  sys_stackheap_outer.o(.text)
+    exit                                     0x0800070d   Thumb Code    12  exit.o(.text)
+    __user_libspace                          0x08000719   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x08000719   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x08000719   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x08000721   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x0800072d   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x0800072d   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0800072f   Thumb Code     0  indicate_semi.o(.text)
+    led_mask                                 0x08000730   Data           8  led.o(.constdata)
+    Region$$Table$$Base                      0x08000738   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000758   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32l1xx.o(.data)
     PLLMulTable                              0x20000004   Data           9  system_stm32l1xx.o(.data)
     AHBPrescTable                            0x2000000d   Data          16  system_stm32l1xx.o(.data)
@@ -456,9 +454,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000125
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000790, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000077c, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000076c, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00000758, Max: 0x00040000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -511,18 +509,18 @@ Memory Map of the image
     0x080001be   0x00000002   PAD
     0x080001c0   0x00000040   Code   RO            4    .text               startup_stm32l1xx_mdp.o
     0x08000200   0x00000254   Code   RO           12    .text               system_stm32l1xx.o
-    0x08000454   0x000000b4   Code   RO           55    .text               led.o
-    0x08000508   0x000001c0   Code   RO           85    .text               blinky.o
-    0x080006c8   0x00000006   Code   RO          112    .text               c_w.l(heapauxi.o)
-    0x080006ce   0x0000004a   Code   RO          132    .text               c_w.l(sys_stackheap_outer.o)
-    0x08000718   0x0000000c   Code   RO          134    .text               c_w.l(exit.o)
-    0x08000724   0x00000008   Code   RO          142    .text               c_w.l(libspace.o)
-    0x0800072c   0x0000000c   Code   RO          203    .text               c_w.l(sys_exit.o)
-    0x08000738   0x00000002   Code   RO          214    .text               c_w.l(use_no_semi.o)
-    0x0800073a   0x00000000   Code   RO          216    .text               c_w.l(indicate_semi.o)
-    0x0800073a   0x00000002   PAD
-    0x0800073c   0x00000010   Data   RO           56    .constdata          led.o
-    0x0800074c   0x00000020   Data   RO          268    Region$$Table       anon$$obj.o
+    0x08000454   0x000000a8   Code   RO           55    .text               led.o
+    0x080004fc   0x000001c0   Code   RO           85    .text               blinky.o
+    0x080006bc   0x00000006   Code   RO          112    .text               c_w.l(heapauxi.o)
+    0x080006c2   0x0000004a   Code   RO          132    .text               c_w.l(sys_stackheap_outer.o)
+    0x0800070c   0x0000000c   Code   RO          134    .text               c_w.l(exit.o)
+    0x08000718   0x00000008   Code   RO          142    .text               c_w.l(libspace.o)
+    0x08000720   0x0000000c   Code   RO          203    .text               c_w.l(sys_exit.o)
+    0x0800072c   0x00000002   Code   RO          214    .text               c_w.l(use_no_semi.o)
+    0x0800072e   0x00000000   Code   RO          216    .text               c_w.l(indicate_semi.o)
+    0x0800072e   0x00000002   PAD
+    0x08000730   0x00000008   Data   RO           56    .constdata          led.o
+    0x08000738   0x00000020   Data   RO          268    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000688, Max: 0x00004000, ABSOLUTE)
@@ -546,12 +544,12 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        448         32          0          4          0      25709   blinky.o
-       180         14         16          0          0       1519   led.o
+       168         12          8          0          0       1445   led.o
         64         26        292          0       1536        808   startup_stm32l1xx_mdp.o
        596         46          0         29          0     190963   system_stm32l1xx.o
 
     ----------------------------------------------------------------------
-      1288        118        340         36       1536     218999   Object Totals
+      1276        116        332         36       1536     218925   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          3          0          0   (incl. Padding)
 
@@ -600,15 +598,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1560        134        340         36       1636     219207   Grand Totals
-      1560        134        340         36       1636     219207   ELF Image Totals
-      1560        134        340         36          0          0   ROM Totals
+      1548        132        332         36       1636     219133   Grand Totals
+      1548        132        332         36       1636     219133   ELF Image Totals
+      1548        132        332         36          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1900 (   1.86kB)
+    Total RO  Size (Code + RO Data)                 1880 (   1.84kB)
     Total RW  Size (RW Data + ZI Data)              1672 (   1.63kB)
-    Total ROM Size (Code + RO Data + RW Data)       1936 (   1.89kB)
+    Total ROM Size (Code + RO Data + RW Data)       1916 (   1.87kB)
 
 ==============================================================================
 
